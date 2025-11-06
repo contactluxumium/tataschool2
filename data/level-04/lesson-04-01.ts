@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-04-01',
+  title: 'الأعداد العشرية',
+  questions: [
+    // Easy
+    { id: 'q-04-01-e1', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: "اكتب 'خمسة وأربعة أعشار' على شكل عدد عشري.", correctAnswer: '5.4', explanation: 'الخاصية: كتابة الأعداد العشرية.\nالشرح:\nالجزء الصحيح: 5\nالجزء العشري (أربعة أعشار): 0.4\nالعدد هو: 5.4' },
+    { id: 'q-04-01-e2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: "ما هو رقم الأعشار في العدد 23.68؟", options: ['2', '3', '6'], correctAnswer: '6', explanation: 'الخاصية: القيمة المكانية في الأعداد العشرية.\nالشرح: أول رقم على يمين الفاصلة هو رقم الأعشار.' },
+    { id: 'q-04-01-e3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: "ما هو الجزء الصحيح في العدد 7.91؟", options: ['7', '91', '0.91'], correctAnswer: '7', explanation: 'الخاصية: مكونات العدد العشري.\nالشرح: الجزء الصحيح هو العدد الموجود على يسار الفاصلة العشرية.' },
+    { id: 'q-04-01-e4', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 12.5 أكبر من 12؟', correctAnswer: 'true', explanation: 'الخاصية: مقارنة الأعداد العشرية.\nالشرح: نعم، لأن 12.5 يحتوي على جزء عشري إضافي موجب.' },
+    { id: 'q-04-01-e5', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: "اكتب الكسر 3/10 على شكل عدد عشري.", correctAnswer: '0.3', explanation: 'الخاصية: تحويل الكسور العشرية.\nالشرح: القسمة على 10 تعني تحريك الفاصلة العشرية مرتبة واحدة إلى اليسار.' },
+    { id: 'q-04-01-e6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: "أي عدد عشري يمثل 'ثلاثة أرباع'؟", options: ['0.25', '0.5', '0.75'], correctAnswer: '0.75', explanation: 'الخاصية: الكسور والأعداد العشرية.\nالشرح: ثلاثة أرباع (3/4) تساوي 0.75.' },
+    { id: 'q-04-01-e7', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 8.2 أصغر من 8.15؟', correctAnswer: 'false', explanation: 'الخاصية: مقارنة الأعداد العشرية.\nالشرح: لا. يمكننا كتابة 8.2 على شكل 8.20. بما أن 20 أكبر من 15، فإن 8.2 أكبر من 8.15.' },
+    { id: 'q-04-01-e8', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'لديك 10.5 دراهم، وأعطاك صديقك درهمين. كم لديك الآن؟', correctAnswer: '12.5', explanation: 'الخاصية: جمع الأعداد العشرية.\nالشرح: نجمع الجزء الصحيح مع الجزء الصحيح:\n10.5 + 2 = 12.5' },
+    // Medium
+    { id: 'q-04-01-m1', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الجمع:', mathExpression: '15.7 + 4.8', correctAnswer: '20.5', explanation: 'الخاصية: جمع الأعداد العشرية.\nالشرح:\nنجمع الأجزاء العشرية:\n0.7 + 0.8 = 1.5\nنجمع الأجزاء الصحيحة:\n15 + 4 = 19\nالمجموع الكلي:\n19 + 1.5 = 20.5' },
+    { id: 'q-04-01-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الطرح:', mathExpression: '20.5 - 9.6', correctAnswer: '10.9', explanation: 'الخاصية: طرح الأعداد العشرية.\nالشرح:\nنطرح الأجزاء العشرية (مع الاستلاف من الجزء الصحيح):\n15 - 6 = 9 (أجزاء من عشرة)\nنطرح الأجزاء الصحيحة بعد الاستلاف:\n19 - 9 = 10\nالنتيجة: 10.9' },
+    { id: 'q-04-01-m3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'رتب الأعداد العشرية من الأكبر للأصغر: 5.8, 8.5, 5.85', options: ['8.5, 5.85, 5.8', '5.8, 5.85, 8.5', '8.5, 5.8, 5.85'], correctAnswer: '8.5, 5.85, 5.8', explanation: 'الخاصية: ترتيب الأعداد العشرية.\nالشرح: نقارن الأجزاء الصحيحة أولاً (8 هو الأكبر). ثم نقارن الأعداد المتبقية (5.85 أكبر من 5.80).' },
+    { id: 'q-04-01-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الضرب:', mathExpression: '3.5 × 100', correctAnswer: '350', explanation: 'الخاصية: الضرب في 100.\nالشرح: عند الضرب في 100، نحرك الفاصلة العشرية مرتبتين إلى اليمين.' },
+    { id: 'q-04-01-m5', type: QuestionType.TrueFalse, difficulty: Difficulty.Medium, text: 'هل 1/5 + 1/5 = 0.4؟', correctAnswer: 'true', explanation: 'الخاصية: الكسور والأعداد العشرية.\nالشرح:\n1/5 = 0.2\nإذن:\n0.2 + 0.2 = 0.4\nالعبارة صحيحة.' },
+    { id: 'q-04-01-m6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: "اكتب العدد 'اثنان وثلاثة أجزاء من مئة' بالأرقام.", options: ['2.3', '2.03', '3.02'], correctAnswer: '2.03', explanation: 'الخاصية: كتابة الأعداد العشرية.\nالشرح: "اثنان" هو الجزء الصحيح. "ثلاثة أجزاء من مئة" تعني أن الرقم 3 يقع في الخانة الثانية بعد الفاصلة.' },
+    // Hard
+    { id: 'q-04-01-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد حاصل الضرب:', mathExpression: '1.2 × 0.5', correctAnswer: '0.6', explanation: 'الخاصية: ضرب الأعداد العشرية.\nالشرح:\n1.2 × 0.5 = 0.6\n(الضرب في 0.5 يكافئ القسمة على 2)' },
+    { id: 'q-04-01-h2', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد خارج القسمة:', mathExpression: '25.5 ÷ 5', correctAnswer: '5.1', explanation: 'الخاصية: قسمة الأعداد العشرية.\nالشرح: يمكن تقسيم العملية:\n25 ÷ 5 = 5\n0.5 ÷ 5 = 0.1\nالنتيجة:\n5 + 0.1 = 5.1' },
+    { id: 'q-04-01-h3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'اشترى علي 4 دفاتر بثمن 6.5 درهم للدفتر الواحد. كم دفع للبائع؟', options: ['24', '25', '26'], correctAnswer: '26', explanation: 'الخاصية: الضرب.\nالشرح: نضرب عدد الدفاتر في ثمن الدفتر الواحد:\n4 × 6.5 = 26\nدرهماً.' },
+    { id: 'q-04-01-h4', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد حاصل الضرب:', mathExpression: '2.5 × 2.5', correctAnswer: '6.25', explanation: 'الخاصية: ضرب الأعداد العشرية.\nالشرح:\nنحسب 25 × 25 = 625.\nبما أن هناك منزلتين عشريتين في المجموع (واحدة في كل عدد)، نضع الفاصلة بعد رقمين من اليمين.\nالنتيجة: 6.25' },
+    { id: 'q-04-01-h5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'إذا كان ثمن 10 بيضات هو 12.5 درهم، فما ثمن البيضة الواحدة؟', options: ['1.0', '1.25', '1.5'], correctAnswer: '1.25', explanation: 'الخاصية: القسمة.\nالشرح: نقسم الثمن الإجمالي على عدد البيضات:\n12.5 ÷ 10 = 1.25\nدرهم.' },
+    { id: 'q-04-01-h6', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد ناتج العملية:', mathExpression: '10 - (2.5 × 2)', correctAnswer: '5', explanation: 'الخاصية: أسبقية العمليات.\nخطوات الحل:\n1. نحسب ما بين القوسين أولاً:\n2.5 × 2 = 5\n2. نجري عملية الطرح:\n10 - 5 = 5' },
+  ]
+};

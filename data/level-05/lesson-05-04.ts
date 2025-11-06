@@ -1,0 +1,26 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-05-04',
+  title: 'مساحة المضلعات الاعتيادية',
+  questions: [
+    // Easy
+    { id: 'q-05-04-e1', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'ما هي مساحة مستطيل طوله 20 سم وعرضه 10 سم؟', correctAnswer: '200', explanation: 'الخاصية: مساحة المستطيل = الطول × العرض.\nالشرح:\n20 سم × 10 سم = 200 سم²' },
+    { id: 'q-05-04-e2', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'ما هي مساحة مربع طول ضلعه 8 سم؟', correctAnswer: '64', explanation: 'الخاصية: مساحة المربع = طول الضلع × طول الضلع.\nالشرح:\n8 سم × 8 سم = 64 سم²' },
+    { id: 'q-05-04-e3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'مساحة متوازي الأضلاع تساوي القاعدة في ...', options: ['الضلع المائل', 'الارتفاع', 'القطر'], correctAnswer: 'الارتفاع', explanation: 'الخاصية: صيغة مساحة متوازي الأضلاع.\nالشرح: مساحة متوازي الأضلاع تُحسب بضرب طول قاعدته في ارتفاعه الموافق لها.' },
+    { id: 'q-05-04-e4', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل مساحة المثلث تساوي (القاعدة × الارتفاع) / 2؟', correctAnswer: 'true', explanation: 'الخاصية: صيغة مساحة المثلث.\nالشرح: نعم، هذه هي الصيغة الصحيحة لحساب مساحة أي مثلث.' },
+    { id: 'q-05-04-e5', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'مربع مساحته 81 سم². ما هو طول ضلعه؟', correctAnswer: '9', explanation: 'الخاصية: الجذر التربيعي.\nالشرح: بما أن المساحة هي الضلع × الضلع، نبحث عن العدد الذي إذا ضرب في نفسه يعطي 81. هذا العدد هو 9.' },
+    { id: 'q-05-04-e6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'مساحة شبه المنحرف تساوي مجموع القاعدتين مضروباً في الارتفاع ومقسوماً على ...', options: ['1', '2', '3'], correctAnswer: '2', explanation: 'الخاصية: صيغة مساحة شبه المنحرف.\nالشرح: الصيغة هي:\n((القاعدة الكبرى + القاعدة الصغرى) × الارتفاع) / 2' },
+    { id: 'q-05-04-e7', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل مساحة المعين تساوي (القطر الأكبر × القطر الأصغر) / 2؟', correctAnswer: 'true', explanation: 'الخاصية: صيغة مساحة المعين.\nالشرح: نعم، هذه هي الصيغة الصحيحة لحساب مساحة المعين بدلالة قطريه.' },
+    { id: 'q-05-04-e8', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'مثلث قاعدته 10 سم وارتفاعه 5 سم. ما هي مساحته؟', correctAnswer: '25', explanation: 'الخاصية: مساحة المثلث.\nالشرح: نطبق الصيغة:\n(10 سم × 5 سم) / 2 = 50 / 2 = 25 سم²' },
+    // Medium
+    { id: 'q-05-04-m1', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'ما هي مساحة متوازي أضلاع طول قاعدته 20 سم وارتفاعه 12 سم؟', correctAnswer: '240', explanation: 'الخاصية: مساحة متوازي الأضلاع.\nالشرح: نطبق الصيغة: القاعدة × الارتفاع.\n20 سم × 12 سم = 240 سم²' },
+    { id: 'q-05-04-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'معين طولا قطريه 16 سم و 10 سم. ما هي مساحته؟', correctAnswer: '80', explanation: 'الخاصية: مساحة المعين.\nالشرح: نطبق الصيغة:\n(القطر الأكبر × القطر الأصغر) / 2\n(16 × 10) / 2 = 160 / 2 = 80 سم²' },
+    { id: 'q-05-04-m3', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'شبه منحرف قاعدتاه 15 سم و 25 سم وارتفاعه 10 سم. ما هي مساحته؟', correctAnswer: '200', explanation: 'الخاصية: مساحة شبه المنحرف.\nخطوات الحل:\n1. نجمع القاعدتين:\n15 + 25 = 40 سم\n2. نضرب المجموع في الارتفاع:\n40 × 10 = 400\n3. نقسم على 2:\n400 / 2 = 200 سم²' },
+    { id: 'q-05-04-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'مستطيل محيطه 50 سم وطوله 15 سم. ما هي مساحته؟', correctAnswer: '150', explanation: 'الخاصية: المحيط والمساحة.\nخطوات الحل:\n1. نجد العرض: العرض = (المحيط / 2) - الطول\n(50/2) - 15 = 25 - 15 = 10 سم\n2. نحسب المساحة: الطول × العرض\n15 سم × 10 سم = 150 سم²' },
+    { id: 'q-05-04-m5', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'ما هي مساحة قرص شعاعه 5 سم؟ (اعتبر π = 3.14)', correctAnswer: '78.5', explanation: 'الخاصية: مساحة القرص = π × الشعاع².\nالشرح:\n3.14 × 5² = 3.14 × 25 = 78.5 سم²' },
+    { id: 'q-05-04-m6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'أي شكل له أكبر مساحة: مربع طول ضلعه 10 سم أم دائرة شعاعها 6 سم؟ (π=3)', options: ['المربع', 'الدائرة', 'متساويان'], correctAnswer: 'الدائرة', explanation: 'الخاصية: مقارنة المساحات.\nخطوات الحل:\n1. مساحة المربع:\n10 × 10 = 100 سم²\n2. مساحة الدائرة:\n3 × 6² = 3 × 36 = 108 سم²\n3. نقارن: 108 > 100، إذن مساحة الدائرة أكبر.' },
+    // Hard
+    { id: 'q-05-04-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'حقل على شكل شبه منحرف مساحته 1200 م² وارتفاعه 30 م. إذا كانت إحدى القاعدتين 50 م، فما هو طول القاعدة الأخرى؟', correctAnswer: '30', explanation: 'الخاصية: مساحة شبه المنحرف.\nخطوات الحل:\n1. نعوض في صيغة المساحة: المساحة = ((ق1 + ق2) × الارتفاع) / 2\n1200 = ((50 + ق2) × 30) / 2\n2. نضرب الطرفين في 2:\n2400 = (50 + ق2) × 30\n3. نقسم على 30:\n2400 / 30 = 50 + ق2\n80 = 50 + ق2\n4. نحل لإيجاد ق2:\nق2 = 80 - 50 = 30 م' },
+  ]
+};

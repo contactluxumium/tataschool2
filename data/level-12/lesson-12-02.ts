@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-12-02',
+  title: 'الأعداد العقدية',
+  questions: [
+    // Easy
+    { id: 'q-12-02-e1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ما قيمة i²؟', options: ['1', '-1', 'i'], correctAnswer: '-1', explanation: 'الخاصية: تعريف العدد i.\nالشرح: العدد i هو العدد التخيلي الذي مربعه يساوي -1.' },
+    { id: 'q-12-02-e2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'الجزء الحقيقي لـ z = -4 + 6i هو:', options: ['-4', '4', '6'], correctAnswer: '-4', explanation: 'الخاصية: الشكل الجبري لعدد عقدي.\nالشرح: في الشكل الجبري z=a+ib، الجزء الحقيقي هو a.' },
+    { id: 'q-12-02-e3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'الجزء التخيلي لـ z = 1 - 5i هو:', options: ['1', '5', '-5'], correctAnswer: '-5', explanation: 'الخاصية: الشكل الجبري لعدد عقدي.\nالشرح: في الشكل الجبري z=a+ib، الجزء التخيلي هو b.' },
+    { id: 'q-12-02-e4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ما هو مرافق z = 8 - 3i؟', options: ['-8 - 3i', '8 + 3i', '-8 + 3i'], correctAnswer: '8 + 3i', explanation: 'الخاصية: مرافق عدد عقدي.\nالشرح: المرافق (z̄) للعدد a+ib هو a-ib. نغير إشارة الجزء التخيلي فقط.' },
+    { id: 'q-12-02-e5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ناتج (3+2i) + (1-i) هو:', options: ['4+i', '4+3i', '2+i'], correctAnswer: '4+i', explanation: 'الخاصية: جمع الأعداد العقدية.\nالشرح: نجمع الأجزاء الحقيقية معاً والأجزاء التخيلية معاً:\n(3+1) + (2-1)i = 4 + 1i = 4+i' },
+    { id: 'q-12-02-e6', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل z + z̄ عدد حقيقي؟', correctAnswer: 'true', explanation: 'الخاصية: خصائص المرافق.\nالشرح: نعم.\n(a+ib) + (a-ib) = 2a\nوهو عدد حقيقي دائماً.' },
+    { id: 'q-12-02-e7', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'ما قيمة i⁴؟', correctAnswer: '1', explanation: 'الخاصية: قوى العدد i.\nالشرح:\ni⁴ = (i²)² = (-1)² = 1' },
+    { id: 'q-12-02-e8', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'إذا كان z حقيقياً، فإن z = z̄.', correctAnswer: 'true', explanation: 'الخاصية: خصائص المرافق.\nالشرح: نعم، إذا كان z حقيقي، فإن جزأه التخيلي 0.\nz=a+0i\nمرافقه هو a-0i = a. إذن z=z̄.' },
+    // Medium
+    { id: 'q-12-02-m1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'ناتج (1+i)² هو:', options: ['2', '2i', '-2i'], correctAnswer: '2i', explanation: 'الخاصية: المتطابقة الهامة.\nالشرح:\n(1+i)² = 1² + 2(1)(i) + i² = 1 + 2i - 1 = 2i' },
+    { id: 'q-12-02-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'ما هو معيار z = 5 - 12i؟', correctAnswer: '13', explanation: 'الخاصية: معيار عدد عقدي.\n|z|=√(a²+b²)\nالشرح:\n|z| = √(5² + (-12)²) = √(25 + 144) = √169 = 13' },
+    { id: 'q-12-02-m3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'ما هو الشكل المثلثي للعدد العقدي z = 2i؟', options: ['[2, π/2]', '[2, π]', '[i, 2]'], correctAnswer: '[2, π/2]', explanation: 'الخاصية: الشكل المثلثي.\nالشرح: المعيار هو |2i|=2. العدد يقع على الجزء الموجب من محور التخيل، إذن العمدة هو π/2. الشكل هو [2, π/2].' },
+    { id: 'q-12-02-m4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'الشكل الجبري للعدد [3, π] هو:', options: ['3', '-3', '3i'], correctAnswer: '-3', explanation: 'الخاصية: التحويل من الشكل المثلثي إلى الجبري.\nالشرح:\nz = r(cosθ + isinθ)\n= 3(cos(π) + isin(π))\n= 3(-1 + i×0) = -3' },
+    { id: 'q-12-02-m5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'حل المعادلة z + 2 = 5i هو:', options: ['-2+5i', '2+5i', '3i'], correctAnswer: '-2+5i', explanation: 'الخاصية: حل المعادلات.\nالشرح: ننقل 2 إلى الطرف الآخر:\nz = -2 + 5i' },
+    { id: 'q-12-02-m6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'صورة النقطة M(z) بالإزاحة ذات المتجهة u(z₀) هي M\'(z\') حيث:', options: ["z' = z + z₀", "z' = z₀z", "z' = z - z₀"], correctAnswer: "z' = z + z₀", explanation: 'الخاصية: التمثيل العقدي للإزاحة.\nالشرح: هذا هو التعريف العقدي للإزاحة.' },
+    // Hard
+    { id: 'q-12-02-h1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'ما هو الشكل الأسي للعدد العقدي z = 1 - i؟', options: ['√2 e^(-iπ/4)', '2 e^(-iπ/4)', '√2 e^(iπ/4)'], correctAnswer: '√2 e^(-iπ/4)', explanation: 'الخاصية: الشكل الأسي.\nالشرح: المعيار:\nr=√(1²+(-1)²)=√2\ncosθ=1/√2 و sinθ=-1/√2\nإذن العمدة θ=-π/4. الشكل الأسي هو:\n√2 e^(-iπ/4)' },
+    { id: 'q-12-02-h2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'أحد حلي المعادلة z² - 4z + 13 = 0 هو:', options: ['2+3i', '4+6i', '2-i'], correctAnswer: '2+3i', explanation: 'الخاصية: حل معادلة من الدرجة الثانية.\nالشرح:\nΔ = (-4)²-4(1)(13)=16-52=-36=(6i)²\nالحلان هما (4±6i)/2. أحد الحلين هو:\n(4+6i)/2 = 2+3i' },
+    { id: 'q-12-02-h3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'ناتج (1+i√3)³ هو:', options: ['-8', '8', '8i'], correctAnswer: '-8', explanation: 'الخاصية: صيغة موافر.\nالشرح: نكتب العدد على شكله المثلثي: معياره 2 وعمدته π/3. [2,π/3]³ = [2³, 3×π/3] = [8,π]. الشكل الجبري لـ [8,π] هو -8.' },
+    { id: 'q-12-02-h4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'صورة M(z) بالدوران الذي مركزه O وزاويته π/2 هي M\'(z\') حيث:', options: ["z' = iz", "z' = -z", "z' = z + i"], correctAnswer: "z' = iz", explanation: 'الخاصية: التمثيل العقدي للدوران.\nالشرح: الدوران بزاوية θ حول الأصل يمثله الضرب في e^(iθ). هنا:\ne^(iπ/2)=cos(π/2)+isin(π/2)=i\nإذن z\'=iz.' },
+    { id: 'q-12-02-h5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'مجموعة النقط M(z) حيث |z - 2i| = 3 هي:', options: ['دائرة', 'مستقيم', 'قطعة'], correctAnswer: 'دائرة', explanation: 'الخاصية: التفسير الهندسي للمعيار.\nالشرح: |z - zₐ| = R تمثل دائرة مركزها A(zₐ) وشعاعها R. هنا، المركز هو النقطة ذات اللحق 2i والشعاع هو 3.' },
+    { id: 'q-12-02-h6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'ما هو الشكل الجبري لـ (1+i)/(1-i)؟', options: ['-1', 'i', '-i'], correctAnswer: 'i', explanation: 'الخاصية: قسمة الأعداد العقدية.\nالشرح: نضرب البسط والمقام في مرافق المقام (1+i):\n((1+i)(1+i))/((1-i)(1+i))\n= (1+i)²/(1²-i²)\n= 2i/2 = i' },
+  ]
+};

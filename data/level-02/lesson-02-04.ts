@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-02-04',
+  title: 'وحدات القياس',
+  questions: [
+    // Easy
+    { id: 'q-02-04-e1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'أي وحدة تستخدم لقياس طول غرفة؟', options: ['المتر', 'السنتيمتر', 'الكيلومتر'], correctAnswer: 'المتر', explanation: 'الخاصية: وحدات قياس الطول.\nالشرح: المتر هو الوحدة الأساسية والمناسبة لقياس أبعاد الغرفة.' },
+    { id: 'q-02-04-e2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'أي وحدة تستخدم لقياس وزنك؟', options: ['الكيلوغرام', 'الطن', 'الغرام'], correctAnswer: 'الكيلوغرام', explanation: 'الخاصية: وحدات قياس الكتلة.\nالشرح: الكيلوغرام هو الوحدة المناسبة لقياس وزن شخص.' },
+    { id: 'q-02-04-e3', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل الكيلوغرام أثقل من الغرام؟', correctAnswer: 'true', explanation: 'الخاصية: العلاقة بين وحدات الكتلة.\nالشرح: نعم،\n1 كيلوغرام = 1000 غرام\n، فهو أثقل بكثير.' },
+    { id: 'q-02-04-e4', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'كم متراً في الكيلومتر الواحد؟', correctAnswer: '1000', explanation: 'الخاصية: وحدات قياس الطول.\nالشرح: البادئة "كيلو" تعني 1000، لذا\n1 كيلومتر = 1000 متر' },
+    { id: 'q-02-04-e5', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل نستخدم اللتر لقياس حجم السوائل؟', correctAnswer: 'true', explanation: 'الخاصية: وحدات قياس السعة.\nالشرح: نعم، اللتر هو الوحدة الأساسية لقياس سعة السوائل.' },
+    { id: 'q-02-04-e6', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'كم سنتيمتراً في مترين؟', correctAnswer: '200', explanation: 'الخاصية: التحويل بين وحدات الطول.\nالشرح: بما أن 1 متر = 100 سنتيمتر، فإن:\n2 متر = 2 × 100 = 200 سنتيمتر' },
+    { id: 'q-02-04-e7', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ما هي الأداة التي نستخدمها لقياس الوزن؟', options: ['الميزان', 'المسطرة', 'الكأس المدرج'], correctAnswer: 'الميزان', explanation: 'الخاصية: أدوات القياس.\nالشرح: الميزان يستخدم لقياس الكتلة (الوزن).' },
+    { id: 'q-02-04-e8', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 1 متر يساوي 100 سنتيمتر؟', correctAnswer: 'true', explanation: 'الخاصية: وحدات قياس الطول.\nالشرح: نعم، هذه علاقة تحويل أساسية.' },
+    // Medium
+    { id: 'q-02-04-m1', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'كم غراماً في 3 كيلوغرامات؟', correctAnswer: '3000', explanation: 'الخاصية: التحويل بين وحدات الكتلة.\nالشرح: 1 كيلوغرام = 1000 غرام، إذن:\n3 كيلوغرامات = 3 × 1000 = 3000 غرام' },
+    { id: 'q-02-04-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'طول طاولة 150 سنتيمتراً. كم متر طولها؟', correctAnswer: '1.5', explanation: 'الخاصية: التحويل بين وحدات الطول.\nالشرح: للتحويل من سنتيمتر إلى متر، نقسم على 100.\n150 ÷ 100 = 1.5 متر' },
+    { id: 'q-02-04-m3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'رتب الأوزان من الأخف للأثقل: 1 كغ, 500 غ, 2000 غ', options: ['500 غ, 1 كغ, 2000 غ', '1 كغ, 500 غ, 2000 غ', '500 غ, 2000 غ, 1 كغ'], correctAnswer: '500 غ, 1 كغ, 2000 غ', explanation: 'الخاصية: مقارنة وترتيب الكتل.\nالشرح: أولاً نوحد الوحدات:\n1 كغ = 1000 غ\nالآن نرتب: 500 غ, 1000 غ, 2000 غ. الترتيب الصحيح هو 500 غ, 1 كغ, 2000 غ.' },
+    { id: 'q-02-04-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'سعة قنينة ماء 2 لتر. كم سنتيلتراً سعتها؟', correctAnswer: '200', explanation: 'الخاصية: التحويل بين وحدات السعة.\nالشرح:\n1 لتر = 100 سنتيلتر\nإذن:\n2 لتر = 2 × 100 = 200 سنتيلتر' },
+    { id: 'q-02-04-m5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'كيلومتر ونصف يساوي كم متر؟', options: ['1050', '1500', '2500'], correctAnswer: '1500', explanation: 'الخاصية: التحويل بين وحدات الطول.\nالشرح:\n1 كيلومتر = 1000 متر\nنصف كيلومتر = 500 متر\nالمجموع:\n1000 + 500 = 1500 متر' },
+    { id: 'q-02-04-m6', type: QuestionType.TrueFalse, difficulty: Difficulty.Medium, text: 'هل 2000 متر تساوي 2 كيلومتر؟', correctAnswer: 'true', explanation: 'الخاصية: التحويل بين وحدات الطول.\nالشرح: نعم، بما أن 1000 متر = 1 كيلومتر، فإن 2000 متر = 2 كيلومتر.' },
+    // Hard
+    { id: 'q-02-04-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'اشترت والدتك 1 كيلوغرام من الدقيق واستخدمت 250 غراماً. كم غراماً بقي؟', correctAnswer: '750', explanation: 'الخاصية: التحويل والطرح.\nخطوات الحل:\n1. نحول 1 كيلوغرام إلى غرام:\n1 كغ = 1000 غ\n2. نطرح الكمية المستخدمة:\n1000 غ - 250 غ = 750 غ' },
+    { id: 'q-02-04-h2', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'إذا كان طول مضمار السباق 400 متر، فكم كيلومتراً يجب أن يركض العداء لإكمال 5 لفات؟', correctAnswer: '2', explanation: 'الخاصية: الضرب والتحويل.\nخطوات الحل:\n1. نحسب المسافة الإجمالية بالمتر:\n400 م × 5 = 2000 م\n2. نحول المسافة إلى كيلومتر:\n2000 م ÷ 1000 = 2 كم' },
+    { id: 'q-02-04-h3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'ما هو مجموع: 1 متر و 20 سم + 50 سم؟', options: ['170 سم', '125 سم', '270 سم'], correctAnswer: '170 سم', explanation: 'الخاصية: الجمع والتحويل.\nخطوات الحل:\n1. نحول 1 متر إلى سنتيمتر:\n1 م = 100 سم\n2. نجمع الأطوال:\n(100 سم + 20 سم) + 50 سم = 120 سم + 50 سم = 170 سم' },
+    { id: 'q-02-04-h4', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'لدينا 3 لترات من العصير. كم كوباً سعته 250 مليلتر يمكننا ملؤه؟', correctAnswer: '12', explanation: 'الخاصية: القسمة والتحويل.\nخطوات الحل:\n1. نحول 3 لترات إلى مليلتر:\n3 لتر = 3000 مل\n2. نقسم السعة الإجمالية على سعة الكوب الواحد:\n3000 مل ÷ 250 مل = 12\nكوباً.' },
+    { id: 'q-02-04-h5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'أي مسافة هي الأطول؟', options: ['3 كم', '3100 م', '290000 سم'], correctAnswer: '3100 م', explanation: 'الخاصية: مقارنة الأطوال.\nخطوات الحل:\n1. نحول كل المسافات إلى المتر:\n3 كم = 3000 م\n3100 م (تبقى كما هي)\n290000 سم = 2900 م\n2. نقارن: 3100 م هي المسافة الأطول.' },
+    { id: 'q-02-04-h6', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'ثلاثة أرباع الكيلوغرام يساوي كم غراماً؟', correctAnswer: '750', explanation: 'الخاصية: الكسور والتحويل.\nخطوات الحل:\n1. الكيلوغرام الواحد يساوي 1000 غرام.\n2. ثلاثة أرباع (3/4) من 1000 هو:\n(1000 × 3) ÷ 4 = 3000 ÷ 4 = 750\nغراماً.' },
+  ]
+};

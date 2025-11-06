@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-08-04',
+  title: 'المتراجحات',
+  questions: [
+    // Easy
+    { id: 'q-08-04-e1', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل x = 5 حل للمتراجحة x > 2؟', correctAnswer: 'true', explanation: 'الخاصية: حل المتراجحات.\nالشرح: نعم، لأن 5 أكبر من 2.' },
+    { id: 'q-08-04-e2', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل x = 7 حل للمتراجحة x ≤ 7؟', correctAnswer: 'true', explanation: 'الخاصية: حل المتراجحات.\nالشرح: نعم، لأن 7 أصغر من أو يساوي 7 (يساويها).' },
+    { id: 'q-08-04-e3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'إذا كان a < b، فإن a + c ... b + c.', options: ['<', '>', '='], correctAnswer: '<', explanation: 'الخاصية: الترتيب والجمع.\nالشرح: إضافة نفس العدد إلى طرفي متراجحة لا يغير اتجاهها.' },
+    { id: 'q-08-04-e4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'حل المتراجحة x + 3 > 8 هو ...', options: ['x > 5', 'x < 5', 'x > 11'], correctAnswer: 'x > 5', explanation: 'الخاصية: حل المتراجحات.\nالشرح: ننقل 3 إلى الطرف الآخر:\nx > 8 - 3\nأي x > 5.' },
+    { id: 'q-08-04-e5', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'عند ضرب طرفي متراجحة في عدد موجب، لا يتغير اتجاهها.', correctAnswer: 'true', explanation: 'الخاصية: الترتيب والضرب.\nالشرح: هذه خاصية أساسية في المتراجحات.' },
+    { id: 'q-08-04-e6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'حل المتراجحة 4x ≥ 20 هو ...', options: ['x ≤ 5', 'x ≥ 5', 'x ≥ 16'], correctAnswer: 'x ≥ 5', explanation: 'الخاصية: حل المتراجحات.\nالشرح: نقسم الطرفين على 4 (عدد موجب)، فلا يتغير اتجاه المتراجحة:\nx ≥ 20 / 4\nأي x ≥ 5.' },
+    { id: 'q-08-04-e7', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل -1 هو حل للمتراجحة x < 0؟', correctAnswer: 'true', explanation: 'الخاصية: حل المتراجحات.\nالشرح: نعم، لأن -1 أصغر من 0.' },
+    { id: 'q-08-04-e8', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'الرمز "≥" يعني ...', options: ['أصغر من أو يساوي', 'أكبر من أو يساوي', 'يساوي تقريباً'], correctAnswer: 'أكبر من أو يساوي', explanation: 'الخاصية: رموز المقارنة.\nالشرح: هذا هو تعريف الرمز ≥.' },
+    // Medium
+    { id: 'q-08-04-m1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'حل المتراجحة 3x - 1 ≤ 14 هو ...', options: ['x ≤ 5', 'x ≥ 5', 'x ≤ 15/3'], correctAnswer: 'x ≤ 5', explanation: 'الخاصية: حل المتراجحات.\nخطوات الحل:\n1. 3x ≤ 14 + 1 => 3x ≤ 15\n2. x ≤ 15 / 3 => x ≤ 5' },
+    { id: 'q-08-04-m2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'حل المتراجحة -2x < 10 هو ...', options: ['x < -5', 'x > -5', 'x > 5'], correctAnswer: 'x > -5', explanation: 'الخاصية: الترتيب والضرب في عدد سالب.\nالشرح: نقسم الطرفين على -2 (عدد سالب)، لذلك يجب تغيير اتجاه المتراجحة:\nx > 10 / -2\nأي x > -5.' },
+    { id: 'q-08-04-m3', type: QuestionType.TrueFalse, difficulty: Difficulty.Medium, text: 'هل جميع الأعداد السالبة هي حلول للمتراجحة x < 1؟', correctAnswer: 'true', explanation: 'الخاصية: مجموعة الحلول.\nالشرح: نعم، لأن أي عدد سالب هو بالضرورة أصغر من 1.' },
+    { id: 'q-08-04-m4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'حل المتراجحة 7 - x > 4 هو ...', options: ['x > 3', 'x < 3', 'x < -3'], correctAnswer: 'x < 3', explanation: 'الخاصية: حل المتراجحات.\nخطوات الحل:\n1. -x > 4 - 7 => -x > -3\n2. نضرب الطرفين في -1 ونغير اتجاه المتراجحة: x < 3.' },
+    { id: 'q-08-04-m5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'أي عدد من هذه الأعداد ليس حلاً للمتراجحة 2x + 1 ≥ 7؟', options: ['3', '4', '2'], correctAnswer: '2', explanation: 'الخاصية: التحقق من الحل.\nالشرح: نحل المتراجحة:\n2x ≥ 6 => x ≥ 3\nالعدد الوحيد الذي لا يحقق هذا الشرط هو 2.' },
+    { id: 'q-08-04-m6', type: QuestionType.TrueFalse, difficulty: Difficulty.Medium, text: 'عند ضرب طرفي متراجحة في عدد سالب، يجب تغيير اتجاهها.', correctAnswer: 'true', explanation: 'الخاصية: الترتيب والضرب.\nالشرح: هذه خاصية أساسية ومهمة في حل المتراجحات.' },
+    // Hard
+    { id: 'q-08-04-h1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'حل المتراجحة 4x + 5 ≤ 2x + 11 هو ...', options: ['x ≤ 3', 'x ≥ 3', 'x ≤ 8'], correctAnswer: 'x ≤ 3', explanation: 'الخاصية: حل المتراجحات.\nخطوات الحل:\n1. نجمع المجاهيل في طرف:\n4x - 2x ≤ 11 - 5\n2. نبسط:\n2x ≤ 6\n3. نقسم على 2:\nx ≤ 3' },
+    { id: 'q-08-04-h2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'حل المتراجحة 3(x - 2) > 9 هو ...', options: ['x > 3', 'x > 5', 'x < 5'], correctAnswer: 'x > 5', explanation: 'الخاصية: حل المتراجحات.\nخطوات الحل:\n1. ننشر:\n3x - 6 > 9\n2. 3x > 15\n3. x > 5' },
+    { id: 'q-08-04-h3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'حل المتراجحة x/2 + 5 ≥ 7 هو ...', options: ['x ≥ 1', 'x ≤ 4', 'x ≥ 4'], correctAnswer: 'x ≥ 4', explanation: 'الخاصية: حل المتراجحات.\nخطوات الحل:\n1. x/2 ≥ 7 - 5 => x/2 ≥ 2\n2. نضرب الطرفين في 2: x ≥ 4.' },
+    { id: 'q-08-04-h4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'محيط مربع يجب أن يكون أصغر من 24 سم. ما هي أكبر قيمة صحيحة ممكنة لطول ضلعه؟', options: ['6', '5', '4'], correctAnswer: '5', explanation: 'الخاصية: حل المسائل بالمتراجحات.\nخطوات الحل:\n1. ليكن c طول الضلع. المحيط هو 4c.\n2. المتراجحة: 4c < 24.\n3. نحل: c < 6. أكبر عدد صحيح أصغر من 6 هو 5.' },
+    { id: 'q-08-04-h5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'حل المتراجحة 1 - 3x > x + 9 هو ...', options: ['x > -2', 'x < -2', 'x > 2'], correctAnswer: 'x < -2', explanation: 'الخاصية: حل المتراجحات.\nخطوات الحل:\n1. -3x - x > 9 - 1\n2. -4x > 8\n3. نقسم على -4 ونغير الاتجاه:\nx < -2' },
+    { id: 'q-08-04-h6', type: QuestionType.TrueFalse, difficulty: Difficulty.Hard, text: 'هل المتراجحتان 2x - 4 < 0 و 2 - x > 0 متكافئتان؟', correctAnswer: 'true', explanation: 'الخاصية: المتراجحات المتكافئة.\nالشرح: المتراجحة الأولى:\n2x < 4 => x < 2\nالمتراجحة الثانية:\n-x > -2 => x < 2\nبما أن لهما نفس مجموعة الحلول، فهما متكافئتان.' },
+  ]
+};

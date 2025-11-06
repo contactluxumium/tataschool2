@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-05-03',
+  title: 'الأعداد العشرية: العمليات الأربع',
+  questions: [
+    // Easy
+    { id: 'q-05-03-e1', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد ناتج الجمع:', mathExpression: '25.5 + 4.5', correctAnswer: '30', explanation: 'الخاصية: جمع الأعداد العشرية.\nخطوات الحل:\n1. نجمع الأجزاء العشرية: 5 + 5 = 10 (نكتب 0 ونحتفظ بـ 1).\n2. نجمع الأجزاء الصحيحة مع الاحتفاظ: 25 + 4 + 1 = 30.\nالنتيجة هي 30.0 أو 30.' },
+    { id: 'q-05-03-e2', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد ناتج الطرح:', mathExpression: '15.8 - 5.3', correctAnswer: '10.5', explanation: 'الخاصية: طرح الأعداد العشرية.\nخطوات الحل:\n1. نطرح الأجزاء العشرية: 8 - 3 = 5.\n2. نطرح الأجزاء الصحيحة: 15 - 5 = 10.\nالنتيجة هي 10.5.' },
+    { id: 'q-05-03-e3', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد ناتج الضرب:', mathExpression: '7.5 × 10', correctAnswer: '75', explanation: 'الخاصية: الضرب في 10.\nالشرح: عند الضرب في 10، نحرك الفاصلة العشرية مرتبة واحدة إلى اليمين.' },
+    { id: 'q-05-03-e4', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد ناتج القسمة:', mathExpression: '25.5 ÷ 100', correctAnswer: '0.255', explanation: 'الخاصية: القسمة على 100.\nالشرح: عند القسمة على 100، نحرك الفاصلة العشرية مرتبتين إلى اليسار.' },
+    { id: 'q-05-03-e5', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 3.5 + 6.5 = 10؟', correctAnswer: 'true', explanation: 'الخاصية: جمع الأعداد العشرية.\nالشرح: نعم:\n3.5 + 6.5 = 10.0\nوهو ما يساوي 10.' },
+    { id: 'q-05-03-e6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'اختر الإجابة الصحيحة:', mathExpression: '0.2 + 0.8', options: ['0.10', '1.0', '10'], correctAnswer: '1.0', explanation: 'الخاصية: جمع الأعداد العشرية.\nالشرح: 2 + 8 = 10. بما أنهما جزءان من عشرة، فالناتج هو 10 أجزاء من عشرة، أي 1.0.' },
+    { id: 'q-05-03-e7', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد ناتج الضرب:', mathExpression: '2.5 × 2', correctAnswer: '5', explanation: 'الخاصية: الضرب.\nالشرح: 2.5 مضروبة في 2 (أي ضعف 2.5) تساوي 5.' },
+    { id: 'q-05-03-e8', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 20 - 5.5 = 14.5؟', correctAnswer: 'true', explanation: 'الخاصية: طرح الأعداد العشرية.\nالشرح: نعم، يمكن كتابة 20 على شكل 20.0 ثم نطرح:\n20.0 - 5.5 = 14.5' },
+    // Medium
+    { id: 'q-05-03-m1', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الجمع:', mathExpression: '125.75 + 34.25', correctAnswer: '160', explanation: 'الخاصية: جمع الأعداد العشرية.\nخطوات الحل:\n1. نجمع الأجزاء العشرية: 0.75 + 0.25 = 1.00.\n2. نجمع الأجزاء الصحيحة ونضيف 1:\n125 + 34 + 1 = 160' },
+    { id: 'q-05-03-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الطرح:', mathExpression: '50.2 - 19.8', correctAnswer: '30.4', explanation: 'الخاصية: طرح الأعداد العشرية.\nالشرح: يمكن إضافة 0.2 للعددين لتسهيل الحساب:\n50.4 - 20 = 30.4' },
+    { id: 'q-05-03-m3', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الضرب:', mathExpression: '1.5 × 8', correctAnswer: '12', explanation: 'الخاصية: الضرب.\nالشرح: 1.5 ثماني مرات:\n(1 × 8) + (0.5 × 8) = 8 + 4 = 12' },
+    { id: 'q-05-03-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج القسمة:', mathExpression: '21 ÷ 4', correctAnswer: '5.25', explanation: 'الخاصية: القسمة.\nالشرح: 21 مقسومة على 4 تساوي 5 والباقي 1. 1 مقسوم على 4 هو ربع، أي 0.25. النتيجة 5.25.' },
+    { id: 'q-05-03-m5', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'اشترت سارة 3 كغ من التفاح بسعر 12.5 درهم للكيلوغرام. كم دفعت؟', correctAnswer: '37.5', explanation: 'الخاصية: الضرب.\nالشرح: نضرب الكمية في السعر:\n3 × 12.5 = 37.5\nدرهماً.' },
+    { id: 'q-05-03-m6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'ما هو عشر العدد 55؟', options: ['0.55', '5.5', '550'], correctAnswer: '5.5', explanation: 'الخاصية: القسمة على 10.\nالشرح: "عشر العدد" يعني قسمته على 10. عند القسمة على 10، نحرك الفاصلة مرتبة واحدة لليسار:\n55.0\nتصبح 5.5.' },
+    // Hard
+    { id: 'q-05-03-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد ناتج الضرب:', mathExpression: '4.25 × 3.5', correctAnswer: '14.875', explanation: 'الخاصية: ضرب الأعداد العشرية.\nخطوات الحل:\n1. نضرب 425 في 35 فنجد 14875.\n2. نعد المنازل العشرية في العددين الأصليين (2 + 1 = 3).\n3. نضع الفاصلة في الناتج بعد 3 أرقام من اليمين: 14.875.' },
+    { id: 'q-05-03-h2', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد ناتج القسمة:', mathExpression: '7.5 ÷ 1.5', correctAnswer: '5', explanation: 'الخاصية: قسمة الأعداد العشرية.\nالشرح: للتخلص من الفاصلة، نضرب العددين في 10.\n75 ÷ 15 = 5' },
+    { id: 'q-05-03-h3', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد ناتج العملية:', mathExpression: '5.5 + (1.5 × 4)', correctAnswer: '11.5', explanation: 'الخاصية: أسبقية العمليات.\nخطوات الحل:\n1. نحسب ما بين القوسين أولاً:\n1.5 × 4 = 6\n2. نجري عملية الجمع:\n5.5 + 6 = 11.5' },
+    { id: 'q-05-03-h4', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'إذا كان ثمن 5 أقلام هو 12.5 درهم، فما ثمن 8 أقلام؟', correctAnswer: '20', explanation: 'الخاصية: الرابع المتناسب.\nخطوات الحل:\n1. نجد ثمن القلم الواحد:\n12.5 ÷ 5 = 2.5\n2. نضرب ثمن القلم الواحد في العدد المطلوب:\n2.5 × 8 = 20' },
+    { id: 'q-05-03-h5', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'مستطيل محيطه 20.4 سم وطوله 6.2 سم. ما هو عرضه؟', correctAnswer: '4', explanation: 'الخاصية: محيط المستطيل.\nخطوات الحل:\n1. نصف المحيط = 20.4 ÷ 2 = 10.2 سم (مجموع الطول والعرض)\n2. العرض = نصف المحيط - الطول\n10.2 - 6.2 = 4 سم' },
+    { id: 'q-05-03-h6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'قسم خيط طوله 12 متراً إلى 8 قطع متساوية. ما طول كل قطعة بالمتر؟', options: ['1.2', '1.5', '1.8'], correctAnswer: '1.5', explanation: 'الخاصية: القسمة.\nالشرح: نقسم الطول الإجمالي على عدد القطع:\n12 ÷ 8 = 1.5\nمتر.' },
+  ]
+};

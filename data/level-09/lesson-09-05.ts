@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-09-05',
+  title: 'الهندسة الفضائية',
+  questions: [
+    // Easy
+    { id: 'q-09-05-e1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'علبة الشاي هي مثال على مجسم ...', options: ['الأسطوانة', 'المكعب', 'متوازي المستطيلات'], correctAnswer: 'متوازي المستطيلات', explanation: 'الخاصية: تمييز المجسمات.\nالشرح: علب الشاي غالباً ما تكون على شكل متوازي المستطيلات.' },
+    { id: 'q-09-05-e2', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل كل وجوه المكعب متطابقة؟', correctAnswer: 'true', explanation: 'الخاصية: تعريف المكعب.\nالشرح: نعم، المكعب له 6 وجوه وكلها مربعات متطابقة.' },
+    { id: 'q-09-05-e3', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'كم عدد وجوه الهرم ذي القاعدة المربعة؟', correctAnswer: '5', explanation: 'الخاصية: مكونات الهرم.\nالشرح: له قاعدة مربعة (1 وجه) وأربعة وجوه جانبية مثلثة (4 وجوه)، المجموع هو 5.' },
+    { id: 'q-09-05-e4', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'حجم المجسم هو مقدار الحيز الذي يشغله.', correctAnswer: 'true', explanation: 'الخاصية: تعريف الحجم.\nالشرح: نعم، هذا هو تعريف الحجم في الفضاء ثلاثي الأبعاد.' },
+    { id: 'q-09-05-e5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ما هو المجسم الذي ليس له رؤوس ولا أحرف؟', options: ['الكرة', 'المخروط', 'الأسطوانة'], correctAnswer: 'الكرة', explanation: 'الخاصية: مكونات المجسمات.\nالشرح: الكرة هي سطح منحنٍ مغلق بالكامل.' },
+    { id: 'q-09-05-e6', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'كم عدد أحرف المكعب؟', correctAnswer: '12', explanation: 'الخاصية: مكونات المكعب.\nالشرح: للمكعب 12 حرفاً (الحافة التي يلتقي عندها وجهان).' },
+    { id: 'q-09-05-e7', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل يمكن لمستقيم ومستوى أن يتقاطعا في نقطتين؟', correctAnswer: 'false', explanation: 'الخاصية: الأوضاع النسبية لمستقيم ومستوى.\nالشرح: إذا تقاطع مستقيم مع مستوى ولم يكن محتوى فيه، فإنه يتقاطعان في نقطة واحدة فقط.' },
+    { id: 'q-09-05-e8', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'المستقيمان اللذان لا ينتميان لنفس المستوى هما مستقيمان ...', options: ['متوازيان', 'غير مستوائيين', 'متقاطعان'], correctAnswer: 'غير مستوائيين', explanation: 'الخاصية: الأوضاع النسبية لمستقيمين في الفضاء.\nالشرح: هذا هو تعريف المستقيمين غير المستوائيين.' },
+    // Medium
+    { id: 'q-09-05-m1', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'ما هو حجم مكعب طول حرفه 5 سم؟', correctAnswer: '125', explanation: 'الخاصية: حجم المكعب = الحرف³.\nالشرح:\n5 × 5 × 5 = 125 سم³' },
+    { id: 'q-09-05-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'ما هو حجم متوازي مستطيلات أبعاده 2م، 4م، 6م؟', correctAnswer: '48', explanation: 'الخاصية: حجم متوازي المستطيلات = الطول × العرض × الارتفاع.\nالشرح:\n2 × 4 × 6 = 48 م³' },
+    { id: 'q-09-05-m3', type: QuestionType.TrueFalse, difficulty: Difficulty.Medium, text: 'حجم المخروط يساوي ثلث حجم الأسطوانة التي لها نفس القاعدة والارتفاع.', correctAnswer: 'true', explanation: 'الخاصية: العلاقة بين حجم المخروط والأسطوانة.\nالشرح: نعم، حجم المخروط =\n(1/3) × مساحة القاعدة × الارتفاع' },
+    { id: 'q-09-05-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'ما هي المساحة الجانبية لأسطوانة شعاعها 2 سم وارتفاعها 10 سم؟ (استخدم π=3)', correctAnswer: '120', explanation: 'الخاصية: المساحة الجانبية للأسطوانة = 2 × π × الشعاع × الارتفاع.\nالشرح:\n2 × 3 × 2 × 10 = 120 سم²' },
+    { id: 'q-09-05-m5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'المستقيم العمودي على مستقيمين متقاطعين ضمن مستوى يكون ...', options: ['موازياً للمستوى', 'عمودياً على المستوى', 'مائلاً على المستوى'], correctAnswer: 'عمودياً على المستوى', explanation: 'الخاصية: شرط تعامد مستقيم ومستوى.\nالشرح: هذا هو تعريف المستقيم العمودي على مستوى.' },
+    { id: 'q-09-05-m6', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'ما هي المساحة الكلية لمكعب طول حرفه 10 سم؟', correctAnswer: '600', explanation: 'الخاصية: المساحة الكلية للمكعب = 6 × الحرف².\nالشرح:\n6 × 10² = 6 × 100 = 600 سم²' },
+    // Hard
+    { id: 'q-09-05-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'هرم حجمه 100 سم³ ومساحة قاعدته 50 سم². ما هو ارتفاعه؟', correctAnswer: '6', explanation: 'الخاصية: حجم الهرم = (1/3) × مساحة القاعدة × الارتفاع.\nالشرح: الارتفاع = (3 × الحجم) / مساحة القاعدة =\n(3 × 100) / 50 = 300 / 50 = 6 سم' },
+    { id: 'q-09-05-h2', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'ما هو حجم كرة شعاعها 3 سم؟ (استخدم π=3.14، وقرب لأقرب عدد صحيح)', correctAnswer: '113', explanation: 'الخاصية: حجم الكرة = (4/3) × π × الشعاع³.\nالشرح:\n(4/3) × 3.14 × 3³ = (4/3) × 3.14 × 27 = 4 × 3.14 × 9 = 113.04 سم³' },
+    { id: 'q-09-05-h3', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'مكعب حجمه 64 سم³. تم تكبيره بمعامل 2. ما هو حجمه الجديد؟', correctAnswer: '512', explanation: 'الخاصية: التكبير والحجم.\nالشرح: عند تكبير مجسم بمعامل k، فإن حجمه يضرب في k³. الحجم الجديد = الحجم الأصلي × 2³ =\n64 × 8 = 512 سم³' },
+    { id: 'q-09-05-h4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'المسقط العمودي لنقطة على مستوى هو ...', options: ['مستقيم', 'نقطة', 'مستوى'], correctAnswer: 'نقطة', explanation: 'الخاصية: الإسقاط العمودي في الفضاء.\nالشرح: المسقط العمودي لنقطة هو نقطة تقاطع المستقيم العمودي على المستوى والمار من تلك النقطة.' },
+    { id: 'q-09-05-h5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'إذا كانت نسبة التصغير هي 1/3، فبأي معامل يتم تصغير المساحة؟', options: ['1/3', '1/6', '1/9'], correctAnswer: '1/9', explanation: 'الخاصية: التصغير والمساحة.\nالشرح: عند تصغير شكل بمعامل k، فإن مساحته تضرب في k². إذن المعامل هو:\n(1/3)² = 1/9' },
+    { id: 'q-09-05-h6', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'ما هو طول قطر مكعب طول حرفه 5 سم؟ (قرب لأقرب عدد صحيح)', correctAnswer: '9', explanation: 'الخاصية: مبرهنة فيتاغورس في الفضاء.\nالشرح: مربع القطر = a²+a²+a² = 3a². مربع القطر = 3 × 5² = 75. القطر = √75 ≈ 8.66.' },
+  ]
+};

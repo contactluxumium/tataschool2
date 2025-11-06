@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-07-01',
+  title: 'الأعداد النسبية',
+  questions: [
+    // Easy
+    { id: 'q-07-01-e1', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد الناتج:', mathExpression: '(-5) + 8', correctAnswer: '3', explanation: 'الخاصية: جمع عددين نسبيين مختلفي الإشارة.\nالشرح: نأخذ إشارة العدد الأكبر (8، موجبة) ونطرح المسافتين عن الصفر:\n8 - 5 = 3' },
+    { id: 'q-07-01-e2', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد الناتج:', mathExpression: '4 - 9', correctAnswer: '-5', explanation: 'الخاصية: طرح الأعداد النسبية.\nالشرح:\n4 - 9 = 4 + (-9)\nنأخذ إشارة العدد الأكبر (9، سالبة) ونطرح المسافتين عن الصفر:\n9 - 4 = 5\nالنتيجة -5.' },
+    { id: 'q-07-01-e3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ما هو مقابل العدد -12؟', options: ['12', '-12', '0'], correctAnswer: '12', explanation: 'الخاصية: مقابل عدد نسبي.\nالشرح: مقابل عدد هو نفس العدد بإشارة معاكسة.' },
+    { id: 'q-07-01-e4', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل -1 أكبر من -7؟', correctAnswer: 'true', explanation: 'الخاصية: مقارنة الأعداد السالبة.\nالشرح: نعم، في الأعداد السالبة، العدد الأقرب إلى الصفر هو الأكبر.' },
+    { id: 'q-07-01-e5', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد الناتج:', mathExpression: '(-6) + (-3)', correctAnswer: '-9', explanation: 'الخاصية: جمع عددين نسبيين لهما نفس الإشارة.\nالشرح: نحتفظ بالإشارة السالبة ونجمع المسافتين عن الصفر:\n6 + 3 = 9\nالنتيجة -9.' },
+    { id: 'q-07-01-e6', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد الناتج:', mathExpression: '8 - (-4)', correctAnswer: '12', explanation: 'الخاصية: طرح عدد سالب.\nالشرح: طرح عدد سالب يكافئ جمع مقابله الموجب.\n8 - (-4) = 8 + 4 = 12' },
+    { id: 'q-07-01-e7', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل -20 أكبر من 0؟', correctAnswer: 'false', explanation: 'الخاصية: مقارنة الأعداد النسبية.\nالشرح: أي عدد سالب هو أصغر من الصفر.' },
+    { id: 'q-07-01-e8', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد الناتج:', mathExpression: '(-15) + 15', correctAnswer: '0', explanation: 'الخاصية: مجموع عدد ومقابله.\nالشرح: مجموع أي عدد ومقابله يساوي دائماً صفر.' },
+    // Medium
+    { id: 'q-07-01-m1', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد الناتج:', mathExpression: '(-6) × 4', correctAnswer: '-24', explanation: 'الخاصية: ضرب عددين نسبيين مختلفي الإشارة.\nالشرح: جداء عددين مختلفي الإشارة هو عدد سالب.\n6 × 4 = 24\nالنتيجة -24.' },
+    { id: 'q-07-01-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد الناتج:', mathExpression: '(-20) ÷ (-5)', correctAnswer: '4', explanation: 'الخاصية: قسمة عددين نسبيين لهما نفس الإشارة.\nالشرح: خارج قسمة عددين لهما نفس الإشارة هو عدد موجب.\n20 ÷ 5 = 4' },
+    { id: 'q-07-01-m3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'رتب الأعداد من الأصغر للأكبر: -10, 3, -1, 0', options: ['-10, -1, 0, 3', '-1, -10, 0, 3', '0, 3, -1, -10'], correctAnswer: '-10, -1, 0, 3', explanation: 'الخاصية: ترتيب الأعداد النسبية.\nالشرح: الأعداد السالبة تأتي قبل الصفر والأعداد الموجبة. كلما كان العدد السالب أبعد عن الصفر، كان أصغر.' },
+    { id: 'q-07-01-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد الناتج:', mathExpression: '(-3) × (-9)', correctAnswer: '27', explanation: 'الخاصية: ضرب عددين نسبيين لهما نفس الإشارة.\nالشرح: جداء عددين لهما نفس الإشارة هو عدد موجب.\n3 × 9 = 27' },
+    { id: 'q-07-01-m5', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد الناتج:', mathExpression: '30 ÷ (-6)', correctAnswer: '-5', explanation: 'الخاصية: قسمة عددين نسبيين مختلفي الإشارة.\nالشرح: خارج قسمة عددين مختلفي الإشارة هو عدد سالب.\n30 ÷ 6 = 5\nالنتيجة -5.' },
+    { id: 'q-07-01-m6', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد الناتج:', mathExpression: '10 - 15 + 3', correctAnswer: '-2', explanation: 'الخاصية: الجمع والطرح المتتالي.\nخطوات الحل:\n1. 10 - 15 = -5\n2. -5 + 3 = -2' },
+    // Hard
+    { id: 'q-07-01-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد الناتج:', mathExpression: '-5 × (3 - 7)', correctAnswer: '20', explanation: 'الخاصية: أسبقية العمليات.\nخطوات الحل:\n1. نحسب ما بداخل القوس أولاً:\n3 - 7 = -4\n2. نجري عملية الضرب:\n-5 × (-4) = 20' },
+    { id: 'q-07-01-h2', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد الناتج:', mathExpression: '(-2)³', correctAnswer: '-8', explanation: 'الخاصية: قوى الأعداد السالبة.\nالشرح:\n(-2) × (-2) × (-2) = 4 × (-2) = -8\nعندما يكون الأس فردياً، تكون النتيجة سالبة.' },
+    { id: 'q-07-01-h3', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'غواص كان على عمق 20 متراً تحت سطح البحر، ثم صعد 8 أمتار. ما هو عمقه الجديد؟ (أجب بعدد سالب)', correctAnswer: '-12', explanation: 'الخاصية: تطبيق الأعداد النسبية.\nالشرح: العمق الأولي هو -20. صعود 8 أمتار يعني إضافة +8. العمق الجديد:\n-20 + 8 = -12\nمتراً' },
+    { id: 'q-07-01-h4', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد الناتج:', mathExpression: '(-5)²', correctAnswer: '25', explanation: 'الخاصية: قوى الأعداد السالبة.\nالشرح:\n(-5) × (-5) = 25\nعندما يكون الأس زوجياً، تكون النتيجة موجبة.' },
+    { id: 'q-07-01-h5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'ما هو ناتج: -10 + 20 - 30 + 40', options: ['20', '-20', '100'], correctAnswer: '20', explanation: 'الخاصية: الجمع التجميعي.\nخطوات الحل:\n1. نجمع الأعداد الموجبة:\n20 + 40 = 60\n2. نجمع الأعداد السالبة:\n-10 - 30 = -40\n3. نجمع الناتجين:\n60 - 40 = 20' },
+    { id: 'q-07-01-h6', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد الناتج:', mathExpression: '(36 ÷ -4) + (-2 × 5)', correctAnswer: '-19', explanation: 'الخاصية: أسبقية العمليات.\nخطوات الحل:\n1. نحسب ما بداخل القوسين:\n36 ÷ -4 = -9\n-2 × 5 = -10\n2. نجمع الناتجين:\n-9 + (-10) = -19' },
+  ]
+};

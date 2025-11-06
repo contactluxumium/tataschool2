@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-04-03',
+  title: 'الأعداد الكسرية: مقارنة وترتيب',
+  questions: [
+    // Easy
+    { id: 'q-04-03-e1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'أي كسر هو الأكبر؟', options: ['4/7', '2/7', '6/7'], correctAnswer: '6/7', explanation: 'الخاصية: مقارنة كسور لها نفس المقام.\nالشرح: عندما يكون المقام متساوياً، فإن الكسر ذو البسط الأكبر هو الكسر الأكبر.' },
+    { id: 'q-04-03-e2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'أي كسر هو الأصغر؟', options: ['1/3', '1/5', '1/2'], correctAnswer: '1/5', explanation: 'الخاصية: مقارنة كسور لها نفس البسط.\nالشرح: عندما يكون البسط متساوياً، فإن الكسر ذو المقام الأكبر هو الكسر الأصغر.' },
+    { id: 'q-04-03-e3', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 5/4 أكبر من 1؟', correctAnswer: 'true', explanation: 'الخاصية: مقارنة كسر بالوحدة.\nالشرح: نعم، عندما يكون البسط أكبر من المقام، يكون الكسر أكبر من 1.' },
+    { id: 'q-04-03-e4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'اختر العلامة الصحيحة:', mathExpression: '3/10 ... 7/10', options: ['<', '>', '='], correctAnswer: '<', explanation: 'الخاصية: مقارنة كسور لها نفس المقام.\nالشرح: بما أن 3 أصغر من 7، فإن 3/10 أصغر من 7/10.' },
+    { id: 'q-04-03-e5', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 10/10 = 1؟', correctAnswer: 'true', explanation: 'الخاصية: مقارنة كسر بالوحدة.\nالشرح: نعم، عندما يتساوى البسط والمقام، فإن الكسر يساوي 1.' },
+    { id: 'q-04-03-e6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'اختر العلامة الصحيحة:', mathExpression: '1/8 ... 1/9', options: ['<', '>', '='], correctAnswer: '>', explanation: 'الخاصية: مقارنة كسور لها نفس البسط.\nالشرح: بما أن المقام 8 أصغر من 9، فإن الكسر 1/8 أكبر من 1/9.' },
+    { id: 'q-04-03-e7', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 5/12 أصغر من 11/12؟', correctAnswer: 'true', explanation: 'الخاصية: مقارنة كسور لها نفس المقام.\nالشرح: نعم، لأن 5 أصغر من 11.' },
+    { id: 'q-04-03-e8', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ما هو الكسر المكافئ لـ 1/3؟', options: ['2/5', '3/6', '4/12'], correctAnswer: '4/12', explanation: 'الخاصية: الكسور المتكافئة.\nالشرح: الكسر المكافئ ينتج عن ضرب البسط والمقام في نفس العدد.\n1 × 4 = 4\n3 × 4 = 12\nإذن 1/3 = 4/12.' },
+    // Medium
+    { id: 'q-04-03-m1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'أي كسر هو الأصغر؟', options: ['1/2', '2/3', '3/5'], correctAnswer: '1/2', explanation: 'الخاصية: مقارنة الكسور.\nالشرح: نحول الكسور إلى أعداد عشرية:\n1/2 = 0.5\n2/3 ≈ 0.66\n3/5 = 0.6\nأصغر قيمة هي 0.5، إذن 1/2 هو الأصغر.' },
+    { id: 'q-04-03-m2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'رتب الكسور من الأصغر للأكبر: 7/9, 2/9, 5/9', options: ['2/9, 5/9, 7/9', '7/9, 5/9, 2/9', '2/9, 7/9, 5/9'], correctAnswer: '2/9, 5/9, 7/9', explanation: 'الخاصية: ترتيب كسور لها نفس المقام.\nالشرح: بما أن المقامات متساوية، نرتب حسب البسط تصاعدياً: 2, 5, 7.' },
+    { id: 'q-04-03-m3', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الجمع:', mathExpression: '4/11 + 5/11', correctAnswer: '9/11', explanation: 'الخاصية: جمع كسور لها نفس المقام.\nالشرح: نجمع البسطين ونحتفظ بالمقام:\n4 + 5 = 9\nالنتيجة: 9/11' },
+    { id: 'q-04-03-m4', type: QuestionType.TrueFalse, difficulty: Difficulty.Medium, text: 'هل 3/5 = 9/15؟', correctAnswer: 'true', explanation: 'الخاصية: الكسور المتكافئة.\nالشرح: نعم، بضرب بسط ومقام 3/5 في 3 نحصل على 9/15.' },
+    { id: 'q-04-03-m5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'اختر العلامة الصحيحة:', mathExpression: '1/2 ... 5/8', options: ['<', '>', '='], correctAnswer: '<', explanation: 'الخاصية: مقارنة الكسور.\nخطوات الحل:\n1. نوحد المقامات، المقام المشترك هو 8:\n1/2 = 4/8\n2. نقارن:\n4/8 < 5/8' },
+    { id: 'q-04-03-m6', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الطرح:', mathExpression: '1 - 3/10', correctAnswer: '7/10', explanation: 'الخاصية: طرح كسر من الوحدة.\nالشرح: نكتب 1 على شكل 10/10 ثم نطرح:\n10/10 - 3/10 = 7/10' },
+    // Hard
+    { id: 'q-04-03-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد ناتج الجمع:', mathExpression: '2/5 + 1/2', correctAnswer: '9/10', explanation: 'الخاصية: جمع كسور ذات مقامات مختلفة.\nخطوات الحل:\n1. نوحد المقامات (المقام المشترك هو 10).\n2. نحول الكسور:\n2/5 = 4/10\n1/2 = 5/10\n3. نجمع:\n4/10 + 5/10 = 9/10' },
+    { id: 'q-04-03-h2', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد ناتج الطرح:', mathExpression: '3/4 - 2/3', correctAnswer: '1/12', explanation: 'الخاصية: طرح كسور ذات مقامات مختلفة.\nخطوات الحل:\n1. نوحد المقامات (المقام المشترك هو 12).\n2. نحول الكسور:\n3/4 = 9/12\n2/3 = 8/12\n3. نطرح:\n9/12 - 8/12 = 1/12' },
+    { id: 'q-04-03-h3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'رتب الكسور من الأكبر للأصغر: 1/2, 3/5, 4/10', options: ['3/5, 1/2, 4/10', '1/2, 3/5, 4/10', '3/5, 4/10, 1/2'], correctAnswer: '3/5, 1/2, 4/10', explanation: 'الخاصية: ترتيب الكسور.\nخطوات الحل:\n1. نحول الكسور إلى أعداد عشرية:\n1/2 = 0.5\n3/5 = 0.6\n4/10 = 0.4\n2. نرتبها تنازلياً: 0.6 > 0.5 > 0.4.\n3. الترتيب هو: 3/5, 1/2, 4/10.' },
+    { id: 'q-04-03-h4', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'ما هو الكسر الذي يقع بين 2/3 و 5/6؟', options: ['1/2', '3/4', '6/7'], correctAnswer: '3/4', explanation: 'الخاصية: مقارنة الكسور.\nالشرح: بالتحويل إلى أعداد عشرية:\n2/3 ≈ 0.66\n5/6 ≈ 0.83\nالكسر 3/4 = 0.75، وهو يقع بين القيمتين.' },
+    { id: 'q-04-03-h5', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'في صف 30 تلميذاً، 2/3 منهم بنات. كم عدد الأولاد؟', correctAnswer: '10', explanation: 'الخاصية: كسر من عدد والطرح.\nخطوات الحل:\n1. نحسب عدد البنات:\n(30 × 2) / 3 = 20\n2. نحسب عدد الأولاد:\n30 - 20 = 10' },
+    { id: 'q-04-03-h6', type: QuestionType.TrueFalse, difficulty: Difficulty.Hard, text: 'هل 1/2 + 1/3 = 5/6؟', correctAnswer: 'true', explanation: 'الخاصية: جمع الكسور.\nالشرح: نعم، بعد توحيد المقامات:\n3/6 + 2/6 = 5/6' },
+  ]
+};

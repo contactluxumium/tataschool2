@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-07-02',
+  title: 'معادلات من الدرجة الأولى',
+  questions: [
+    // Easy
+    { id: 'q-07-02-e1', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد قيمة x:', mathExpression: 'x + 5 = 12', correctAnswer: '7', explanation: 'الخاصية: حل المعادلات.\nالشرح: ننقل 5 إلى الطرف الآخر مع تغيير إشارته:\nx = 12 - 5\nإذن:\nx = 7' },
+    { id: 'q-07-02-e2', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد قيمة x:', mathExpression: 'x - 3 = 10', correctAnswer: '13', explanation: 'الخاصية: حل المعادلات.\nالشرح: ننقل -3 إلى الطرف الآخر مع تغيير إشارته:\nx = 10 + 3\nإذن:\nx = 13' },
+    { id: 'q-07-02-e3', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد قيمة y:', mathExpression: '5y = 30', correctAnswer: '6', explanation: 'الخاصية: حل المعادلات.\nالشرح: نقسم الطرفين على 5:\ny = 30 / 5\nإذن:\ny = 6' },
+    { id: 'q-07-02-e4', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد قيمة a:', mathExpression: 'a / 4 = 5', correctAnswer: '20', explanation: 'الخاصية: حل المعادلات.\nالشرح: نضرب الطرفين في 4:\na = 5 × 4\nإذن:\na = 20' },
+    { id: 'q-07-02-e5', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل x = 4 هو حل المعادلة x + 1 = 5؟', correctAnswer: 'true', explanation: 'الخاصية: التحقق من الحل.\nالشرح: نعوض x بـ 4:\n4 + 1 = 5\nبما أن:\n5 = 5\nفالعبارة صحيحة.' },
+    { id: 'q-07-02-e6', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد قيمة x:', mathExpression: '15 - x = 8', correctAnswer: '7', explanation: 'الخاصية: حل المعادلات.\nالشرح: ننقل x إلى الطرف الأيمن و 8 إلى الطرف الأيسر:\n15 - 8 = x\nإذن:\nx = 7' },
+    { id: 'q-07-02-e7', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'أوجد قيمة m:', mathExpression: '10m = 100', correctAnswer: '10', explanation: 'الخاصية: حل المعادلات.\nالشرح: نقسم الطرفين على 10:\nm = 100 / 10\nإذن:\nm = 10' },
+    { id: 'q-07-02-e8', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'عدد إذا ضربناه في 3 كان الناتج 21. فما هو العدد؟', correctAnswer: '7', explanation: 'الخاصية: ترجمة المسألة إلى معادلة.\nالشرح: المعادلة هي:\n3x = 21\nالحل هو:\nx = 21 / 3 = 7' },
+    // Medium
+    { id: 'q-07-02-m1', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد قيمة x:', mathExpression: '3x + 4 = 19', correctAnswer: '5', explanation: 'الخاصية: حل معادلة من الدرجة الأولى.\nخطوات الحل:\n1. ننقل 4 إلى الطرف الآخر:\n3x = 19 - 4 = 15\n2. نقسم الطرفين على 3:\nx = 15 / 3 = 5' },
+    { id: 'q-07-02-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد قيمة y:', mathExpression: '4y - 5 = 7', correctAnswer: '3', explanation: 'الخاصية: حل معادلة من الدرجة الأولى.\nخطوات الحل:\n1. ننقل -5 إلى الطرف الآخر:\n4y = 7 + 5 = 12\n2. نقسم الطرفين على 4:\ny = 12 / 4 = 3' },
+    { id: 'q-07-02-m3', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد قيمة z:', mathExpression: 'z / 2 + 3 = 8', correctAnswer: '10', explanation: 'الخاصية: حل معادلة من الدرجة الأولى.\nخطوات الحل:\n1. ننقل 3 إلى الطرف الآخر:\nz / 2 = 8 - 3 = 5\n2. نضرب الطرفين في 2:\nz = 5 × 2 = 10' },
+    { id: 'q-07-02-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد قيمة x:', mathExpression: '8 - x = 12', correctAnswer: '-4', explanation: 'الخاصية: حل المعادلات.\nالشرح: ننقل x إلى اليمين و 12 إلى اليسار:\n8 - 12 = x\nإذن:\nx = -4' },
+    { id: 'q-07-02-m5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'أوجد قيمة x:', mathExpression: '6x = -24', options: ['4', '-4', '18'], correctAnswer: '-4', explanation: 'الخاصية: حل المعادلات.\nالشرح: نقسم الطرفين على 6:\nx = -24 / 6 = -4' },
+    { id: 'q-07-02-m6', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'ضعف عدد مضافاً إليه 5 يساوي 15. ما هو العدد؟', correctAnswer: '5', explanation: 'الخاصية: ترجمة المسألة إلى معادلة.\nالشرح: المعادلة هي:\n2x + 5 = 15\n2x = 10\nإذن:\nx = 5' },
+    // Hard
+    { id: 'q-07-02-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد قيمة x:', mathExpression: '5x + 3 = 2x + 12', correctAnswer: '3', explanation: 'الخاصية: حل معادلة بمجهول في الطرفين.\nخطوات الحل:\n1. نجمع المجاهيل في طرف:\n5x - 2x = 3x\n2. نجمع الأعداد في الطرف الآخر:\n12 - 3 = 9\n3. تصبح المعادلة:\n3x = 9\nإذن x = 3.' },
+    { id: 'q-07-02-h2', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد قيمة a:', mathExpression: '3(a - 2) = 15', correctAnswer: '7', explanation: 'الخاصية: النشر وحل المعادلات.\nخطوات الحل:\n1. ننشر الطرف الأيسر:\n3a - 6 = 15\n2. نحل المعادلة:\n3a = 21\nإذن a = 7.' },
+    { id: 'q-07-02-h3', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'عمر أب 35 سنة وعمر ابنه 5 سنوات. بعد كم سنة يصبح عمر الأب ثلاثة أضعاف عمر الابن؟', correctAnswer: '10', explanation: 'الخاصية: حل المسائل بالمعادلات.\nخطوات الحل:\n1. ليكن x عدد السنوات. عمر الأب سيصبح 35+x وعمر الابن 5+x.\n2. نكتب المعادلة:\n35+x = 3(5+x)\n3. نحل المعادلة:\n35+x = 15+3x\n20 = 2x\nx = 10 سنوات' },
+    { id: 'q-07-02-h4', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد قيمة x:', mathExpression: '7x - 10 = 3x + 6', correctAnswer: '4', explanation: 'الخاصية: حل معادلة بمجهول في الطرفين.\nخطوات الحل:\n1. نجمع المجاهيل:\n7x - 3x = 4x\n2. نجمع الأعداد:\n6 + 10 = 16\n3. المعادلة:\n4x = 16\nإذن x = 4.' },
+    { id: 'q-07-02-h5', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد قيمة y:', mathExpression: 'y/4 - 1 = y/6', correctAnswer: '12', explanation: 'الخاصية: حل معادلة كسرية.\nخطوات الحل:\n1. نوحد المقامات (المقام المشترك هو 12):\n3y/12 - 12/12 = 2y/12\n2. نتخلص من المقامات:\n3y - 12 = 2y\n3. نحل المعادلة:\ny = 12' },
+    { id: 'q-07-02-h6', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'مستطيل طوله يزيد عن عرضه بـ 4 سم ومحيطه 40 سم. ما هو طوله؟', correctAnswer: '12', explanation: 'الخاصية: حل المسائل بالمعادلات.\nخطوات الحل:\n1. ليكن العرض c. الطول هو c+4. المحيط:\n2(c + c+4) = 40\n2. نحل المعادلة:\n2(2c+4) = 40\n4c+8=40\n4c=32\nc=8 سم (العرض)\n3. الطول:\n8 + 4 = 12 سم' },
+  ]
+};

@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-02-05',
+  title: 'الوقت والنقود',
+  questions: [
+    // Easy
+    { id: 'q-02-05-e1', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'كم ثانية في الدقيقة الواحدة؟', correctAnswer: '60', explanation: 'الخاصية: وحدات قياس الزمن.\nالشرح: الدقيقة الواحدة تتكون من 60 ثانية.' },
+    { id: 'q-02-05-e2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ما هو الشهر الذي يأتي بعد شهر مارس؟', options: ['فبراير', 'أبريل', 'مايو'], correctAnswer: 'أبريل', explanation: 'الخاصية: ترتيب الشهور.\nالشرح: ترتيب الشهور هو: ... مارس، أبريل، مايو ...' },
+    { id: 'q-02-05-e3', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'كم تساوي قطعة نقدية من فئة 5 دراهم وقطعتان من فئة 1 درهم؟', correctAnswer: '7', explanation: 'الخاصية: جمع النقود.\nالشرح:\n5 + 1 + 1 = 7\nدراهم.' },
+    { id: 'q-02-05-e4', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل ساعتان تساوي 120 دقيقة؟', correctAnswer: 'true', explanation: 'الخاصية: التحويل بين وحدات الزمن.\nالشرح: بما أن 1 ساعة = 60 دقيقة، فإن:\n2 ساعة = 2 × 60 = 120 دقيقة' },
+    { id: 'q-02-05-e5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'إذا كانت الساعة تشير إلى التاسعة والربع، فكم دقيقة مرت بعد التاسعة؟', options: ['10', '15', '20'], correctAnswer: '15', explanation: 'الخاصية: قراءة الساعة.\nالشرح: "الربع" ساعة يساوي 15 دقيقة.' },
+    { id: 'q-02-05-e6', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'معك ورقتان من فئة 20 درهماً. كم المبلغ الإجمالي؟', correctAnswer: '40', explanation: 'الخاصية: جمع النقود.\nالشرح:\n20 + 20 = 40\nدرهماً.' },
+    { id: 'q-02-05-e7', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل في السنة 4 فصول؟', correctAnswer: 'true', explanation: 'الخاصية: فصول السنة.\nالشرح: نعم، الفصول هي الربيع، الصيف، الخريف، الشتاء.' },
+    { id: 'q-02-05-e8', type: QuestionType.NumericInput, difficulty: Difficulty.Easy, text: 'كم يوماً في شهر فبراير في سنة بسيطة؟', correctAnswer: '28', explanation: 'الخاصية: التقويم.\nالشرح: شهر فبراير يتكون من 28 يوماً في السنة البسيطة، و 29 يوماً في السنة الكبيسة.' },
+    // Medium
+    { id: 'q-02-05-m1', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'بدأ برنامج تلفزيوني على الساعة 6:30 مساءً واستمر 45 دقيقة. متى انتهى؟ (اكتب الدقيقة فقط)', correctAnswer: '15', explanation: 'الخاصية: حساب المدد الزمنية.\nخطوات الحل:\n1.\n30 دقيقة + 45 دقيقة = 75 دقيقة\n2. 75 دقيقة تساوي 1 ساعة و 15 دقيقة.\n3. نضيف ساعة إلى 6 فتصبح 7، وتبقى 15 دقيقة. إذن انتهى على الساعة 7:15.' },
+    { id: 'q-02-05-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'لديك 100 درهم. كم ورقة من فئة 20 درهماً يمكنك الحصول عليها؟', correctAnswer: '5', explanation: 'الخاصية: القسمة.\nالشرح: نقسم المبلغ الإجمالي على قيمة الورقة:\n100 ÷ 20 = 5\nورقات.' },
+    { id: 'q-02-05-m3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'ثلاثة أرباع الساعة تساوي كم دقيقة؟', options: ['30', '45', '50'], correctAnswer: '45', explanation: 'الخاصية: كسور الزمن.\nالشرح: الساعة 60 دقيقة. ربع الساعة 15 دقيقة. ثلاثة أرباع الساعة هي:\n3 × 15 = 45\nدقيقة.' },
+    { id: 'q-02-05-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'معك 3 قطع نقدية من فئة 10 دراهم وقطعتان من فئة 5 دراهم. كم المبلغ الإجمالي؟', correctAnswer: '40', explanation: 'الخاصية: الضرب والجمع.\nخطوات الحل:\n1. قيمة قطع 10 دراهم:\n3 × 10 = 30\n2. قيمة قطع 5 دراهم:\n2 × 5 = 10\n3. المجموع:\n30 + 10 = 40\nدرهماً.' },
+    { id: 'q-02-05-m5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'ما هو اليوم الذي كان قبل يوم الثلاثاء؟', options: ['الإثنين', 'الأربعاء', 'الأحد'], correctAnswer: 'الإثنين', explanation: 'الخاصية: ترتيب أيام الأسبوع.\nالشرح: قبل الثلاثاء يأتي يوم الإثنين.' },
+    { id: 'q-02-05-m6', type: QuestionType.TrueFalse, difficulty: Difficulty.Medium, text: 'هل 500 سنتيم تساوي 5 دراهم؟', correctAnswer: 'true', explanation: 'الخاصية: وحدات النقود.\nالشرح: نعم، لأن 1 درهم = 100 سنتيم.' },
+    // Hard
+    { id: 'q-02-05-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'سافرت من مدينتك على الساعة 9:00 صباحاً ووصلت وجهتك على الساعة 1:30 بعد الظهر. كم ساعة استغرقت الرحلة؟', correctAnswer: '4.5', explanation: 'الخاصية: حساب المدة الزمنية.\nالشرح: من 9:00 إلى 12:00 هي 3 ساعات. من 12:00 إلى 1:30 هي ساعة ونصف. المجموع:\n3 + 1.5 = 4.5\nساعات.' },
+    { id: 'q-02-05-h2', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'معك 100 درهم، اشتريت قميصاً بـ 75 درهماً. كم بقي معك؟', correctAnswer: '25', explanation: 'الخاصية: الطرح.\nالشرح:\n100 - 75 = 25\nدرهماً.' },
+    { id: 'q-02-05-h3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'إذا كان أول يوم في الشهر هو يوم الجمعة، فما هو اليوم الذي سيكون فيه اليوم الثامن من الشهر؟', options: ['الخميس', 'الجمعة', 'السبت'], correctAnswer: 'الجمعة', explanation: 'الخاصية: التقويم.\nالشرح: اليوم الثامن سيكون بعد 7 أيام من اليوم الأول (أسبوع كامل). لذا سيكون نفس اليوم، وهو الجمعة.' },
+    { id: 'q-02-05-h4', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'تريد شراء لعبة ثمنها 65 درهماً. معك ورقة من فئة 50 درهماً وورقة من فئة 20 درهماً. كم سيعيد لك البائع؟', correctAnswer: '5', explanation: 'الخاصية: الجمع والطرح.\nخطوات الحل:\n1. نحسب المبلغ الذي معك:\n50 + 20 = 70\nدرهماً.\n2. نطرح ثمن اللعبة من المبلغ الذي معك:\n70 - 65 = 5\nدراهم.' },
+    { id: 'q-02-05-h5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'كم دقيقة في يوم واحد؟', options: ['1240', '1440', '1540'], correctAnswer: '1440', explanation: 'الخاصية: التحويل بين وحدات الزمن.\nالشرح: اليوم فيه 24 ساعة، والساعة فيها 60 دقيقة. إذن عدد الدقائق هو:\n24 × 60 = 1440\nدقيقة.' },
+    { id: 'q-02-05-h6', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'تكلفة دقيقة المكالمة الهاتفية نصف درهم. كم تكلفة مكالمة مدتها 10 دقائق؟', correctAnswer: '5', explanation: 'الخاصية: الضرب.\nالشرح: نضرب مدة المكالمة في تكلفتها للدقيقة:\n10 دقائق × 0.5 درهم/دقيقة = 5\nدراهم.' },
+  ]
+};

@@ -1,0 +1,31 @@
+import { Lesson, QuestionType, Difficulty } from '../../types';
+
+export const lesson: Lesson = {
+  id: 'lesson-03-02',
+  title: 'الكسور',
+  questions: [
+    // Easy
+    { id: 'q-03-02-e1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'ماذا يمثل الجزء الملون في شريط مقسم إلى 3 أجزاء متساوية، جزء واحد منها ملون؟', options: ['1/2', '1/3', '1/4'], correctAnswer: '1/3', explanation: 'الخاصية: تعريف الكسر.\nالشرح: الكسر يمثل جزءاً من كل. البسط (1) يمثل عدد الأجزاء الملونة، والمقام (3) يمثل العدد الإجمالي للأجزاء.' },
+    { id: 'q-03-02-e2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'في الكسر 5/8، ما هو البسط؟', options: ['5', '8', '13'], correctAnswer: '5', explanation: 'الخاصية: مكونات الكسر.\nالشرح: البسط هو العدد العلوي في الكسر.' },
+    { id: 'q-03-02-e3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'في الكسر 3/7، ما هو المقام؟', options: ['3', '7', '10'], correctAnswer: '7', explanation: 'الخاصية: مكونات الكسر.\nالشرح: المقام هو العدد السفلي في الكسر.' },
+    { id: 'q-03-02-e4', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل الكسر 4/4 يساوي 1؟', correctAnswer: 'true', explanation: 'الخاصية: الكسور والوحدة.\nالشرح: نعم، عندما يكون البسط مساوياً للمقام، فإن الكسر يساوي 1 (الكل).' },
+    { id: 'q-03-02-e5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'أي كسر يمثل النصف؟', options: ['1/2', '1/3', '2/1'], correctAnswer: '1/2', explanation: 'الخاصية: تمثيل الكسور.\nالشرح: النصف يمثل جزءاً واحداً من جزأين متساويين، ويكتب 1/2.' },
+    { id: 'q-03-02-e6', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'في الكسر 1/5، هل 5 هو البسط؟', correctAnswer: 'false', explanation: 'الخاصية: مكونات الكسر.\nالشرح: لا، 5 هو المقام (العدد السفلي) و 1 هو البسط (العدد العلوي).' },
+    { id: 'q-03-02-e7', type: QuestionType.MultipleChoice, difficulty: Difficulty.Easy, text: 'أكلت ربع كعكة. أي كسر يمثل ما أكلته؟', options: ['1/2', '1/3', '1/4'], correctAnswer: '1/4', explanation: 'الخاصية: تمثيل الكسور.\nالشرح: الربع يمثل جزءاً واحداً من أربعة أجزاء متساوية، ويكتب 1/4.' },
+    { id: 'q-03-02-e8', type: QuestionType.TrueFalse, difficulty: Difficulty.Easy, text: 'هل 1/3 أكبر من 1/2؟', correctAnswer: 'false', explanation: 'الخاصية: مقارنة الكسور.\nالشرح: لا، كلما كبر المقام (مع نفس البسط)، صغر الكسر. الثلث أصغر من النصف.' },
+    // Medium
+    { id: 'q-03-02-m1', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'أي كسر هو الأصغر؟', options: ['1/2', '1/5', '1/10'], correctAnswer: '1/10', explanation: 'الخاصية: مقارنة الكسور.\nالشرح: عندما يكون البسط متساوياً، فإن الكسر الذي له أكبر مقام هو الأصغر.' },
+    { id: 'q-03-02-m2', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الجمع:', mathExpression: '2/7 + 3/7', correctAnswer: '5/7', explanation: 'الخاصية: جمع الكسور ذات نفس المقام.\nالشرح: نجمع البسطين ونحتفظ بنفس المقام:\n2 + 3 = 5\nالنتيجة: 5/7' },
+    { id: 'q-03-02-m3', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'ما هو الكسر المكافئ لـ 2/3؟', options: ['3/4', '4/6', '5/7'], correctAnswer: '4/6', explanation: 'الخاصية: الكسور المتكافئة.\nالشرح: نضرب البسط والمقام في نفس العدد (2) للحصول على كسر مكافئ:\n2 × 2 = 4\n3 × 2 = 6\nالكسر المكافئ هو 4/6.' },
+    { id: 'q-03-02-m4', type: QuestionType.NumericInput, difficulty: Difficulty.Medium, text: 'أوجد ناتج الطرح:', mathExpression: '7/8 - 3/8', correctAnswer: '4/8', explanation: 'الخاصية: طرح الكسور ذات نفس المقام.\nالشرح: نطرح البسطين ونحتفظ بنفس المقام:\n7 - 3 = 4\nالنتيجة: 4/8' },
+    { id: 'q-03-02-m5', type: QuestionType.TrueFalse, difficulty: Difficulty.Medium, text: 'هل 1/2 = 5/10؟', correctAnswer: 'true', explanation: 'الخاصية: الكسور المتكافئة.\nالشرح: نعم، إذا ضربنا بسط ومقام الكسر 1/2 في 5، نحصل على 5/10.' },
+    { id: 'q-03-02-m6', type: QuestionType.MultipleChoice, difficulty: Difficulty.Medium, text: 'رتب الكسور من الأكبر للأصغر: 4/5, 2/5, 3/5', options: ['4/5, 3/5, 2/5', '2/5, 3/5, 4/5', '3/5, 2/5, 4/5'], correctAnswer: '4/5, 3/5, 2/5', explanation: 'الخاصية: ترتيب الكسور ذات نفس المقام.\nالشرح: عندما يكون المقام متساوياً، نرتب الكسور حسب بسطها. الأكبر هو الذي له أكبر بسط.' },
+    // Hard
+    { id: 'q-03-02-h1', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد ناتج الجمع:', mathExpression: '1/2 + 1/3', correctAnswer: '5/6', explanation: 'الخاصية: جمع الكسور ذات مقامات مختلفة.\nخطوات الحل:\n1. نوحد المقامات بإيجاد المضاعف المشترك الأصغر لـ 2 و 3 وهو 6.\n2. نحول الكسور:\n1/2 = 3/6\n1/3 = 2/6\n3. نجمع الكسور الجديدة:\n3/6 + 2/6 = 5/6' },
+    { id: 'q-03-02-h2', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'ما هو ربع العدد 20؟', options: ['4', '5', '10'], correctAnswer: '5', explanation: 'الخاصية: كسر من عدد.\nالشرح: "ربع العدد" يعني قسمة العدد على 4.\n20 ÷ 4 = 5' },
+    { id: 'q-03-02-h3', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'لديك شريط طوله 1 متر، استعملت 3/4 منه. ما طول الجزء المتبقي بالكسر؟', correctAnswer: '1/4', explanation: 'الخاصية: طرح الكسور من الوحدة.\nالشرح: الشريط الكامل يمثل 1 أو 4/4. الجزء المتبقي هو:\n4/4 - 3/4 = 1/4' },
+    { id: 'q-03-02-h4', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'أوجد ناتج الطرح:', mathExpression: '1 - 2/5', correctAnswer: '3/5', explanation: 'الخاصية: طرح الكسور من الوحدة.\nالشرح: نكتب 1 على شكل كسر مقامه 5، أي 5/5. ثم نطرح:\n5/5 - 2/5 = 3/5' },
+    { id: 'q-03-02-h5', type: QuestionType.MultipleChoice, difficulty: Difficulty.Hard, text: 'أي كسر هو الأكبر؟', options: ['2/3', '3/4', '4/5'], correctAnswer: '4/5', explanation: 'الخاصية: مقارنة الكسور.\nالشرح: يمكن تحويل الكسور إلى أعداد عشرية للمقارنة:\n2/3 ≈ 0.67\n3/4 = 0.75\n4/5 = 0.80\nإذن 4/5 هو الأكبر.' },
+    { id: 'q-03-02-h6', type: QuestionType.NumericInput, difficulty: Difficulty.Hard, text: 'نصف عدد ما يساوي 15. فما هو هذا العدد؟', correctAnswer: '30', explanation: 'الخاصية: عملية الضرب (عكس القسمة).\nالشرح: إذا كان نصف العدد هو 15، فإن العدد الكامل هو ضعف 15.\n15 × 2 = 30' },
+  ]
+};
